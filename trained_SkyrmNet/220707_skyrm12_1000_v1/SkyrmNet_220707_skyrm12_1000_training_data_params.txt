@@ -1,0 +1,24 @@
+NN name: SkyrmNet_220707_skyrm12_1000
+final NN savepath: /zota/Lorentz/AlecBender/mumax_training_files/SkyrmNet-main/trained_SkyrmNet/220707_skyrm12_1000/SkyrmNet_220707_skyrm12_1000_final.pt
+images shape: (1000, 256, 256)
+labels shape: (1000, 256, 256, 1)
+test split: 0.2
+batch size: 64
+epochs: 500
+
+number channels: 1
+dim_order_in: channel_last
+dim_order_out: channel_first
+
+Noise added to training/test data using atomai.transforms.datatransform():
+gauss_noise: [40, 200]
+poisson_noise: [15, 65]
+salt_and_pepper: [5, 35]
+contrast: [3, 18]
+blur: [1, 50]
+zoom: False
+rotation: False
+seed: 42
+
+notes: Trained on rotated Skx data such that tilt axis is along x axis
+(contrast is left/right)
