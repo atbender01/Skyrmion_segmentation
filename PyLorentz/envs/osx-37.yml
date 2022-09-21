@@ -1,0 +1,26 @@
+name: PyLorentz
+channels:
+  - anaconda
+  - conda-forge
+  - defaults
+dependencies:
+  - hyperspy=1.5.2
+  - h5py=2.10.0
+  - ipykernel
+  - ipympl
+  - ipyparallel
+  - ipython
+  - ipython_genutils
+  - ipywidgets
+  - jupyter
+  - jupyterlab
+  - matplotlib=3.2.1
+  - mdf_forge
+  - numpy
+  - numba
+  - python=3.7.1
+  - pysimplegui=4.28.0
+  - scikit-image=0.15.0
+  - scipy
+  - tk=8.6.8
+  - tifffile
